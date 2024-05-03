@@ -173,6 +173,39 @@ main {
 
 .box-card {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    width: 590px;
+    grid-template-rows: 50% 50%;
+    width: 340px;
+    height: 480px;
+}
+
+.box-img {
+    background-color: tomato;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131e2f;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 20px;
+    color: #fff;
+    gap: 10px;
+    padding: 20px 32px 0px 32px;
+}
+
+.price {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 16px;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: #333333;
+}
+
+.box-img img {
+    width: 100%;
 }
