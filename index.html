@@ -24,17 +24,47 @@
                 <li><a href="">Login</a></li>
                 <li><a href="">Quiz</a></li>
             </ul>
-            <button id="btn-color" onclick="changeBackground()">Tema</button>
+            <button id="btnColor" onclick="changeBackground()">Tema</button>
         </nav>
     </header>
     <main id="container">
-        
+        <section id="banner">
+            <a href="#cards" id="btnBanner">Veja Mais</a>
+            <div class="arrow-down">
+                <span id="line"></span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="title-cards">
+                <h1>Modelos</h1>
+                <span class="line"></span>
+            </div>
+            <div class="container-cards">
+                <div class="box-card">
+                    <figure class="box-img">
+                        <img src="src/assets/bike-card.png" alt="bike do card">
+                    </figure>
+                    <div class="box-text">
+                        <h3>SPHINIX BIKE</h3>
+                        <div class="price">
+                            <span>R$500</span>
+                            <strong>R$349,99</strong>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script>
         //alert('Seja Bem Vindo!')
     </script>
     <script src="./src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/cb4f3aa626.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
