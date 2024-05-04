@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../css/contato.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>BikeCity</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Quiz</a></li>
+            </ul>
+            <button id="btnColor" onclick="changeBackgroundContact()">Tema</button>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <div class="container">
+                <form action="">
+                    <h1>Contato</h1>
+                    <p>Preencha o formulário para entrarmos em contato com você</p>
+                    <div class="input-single">
+                        <input type="text" id="nome-box" class="input" autocomplete="off" required>
+                        <label for="nome-box" class="label">Seu nome</label>
+                    </div>
+                    <div class="input-single">
+                        <input type="text" id="email-box" class="input" autocomplete="off" required>
+                        <label for="email-box" class="label">Seu e-mail</label>
+                    </div>
+                    <div class="input-single">
+                        <input type="text" id="phone-box" class="input" autocomplete="off" required>
+                        <label for="phone-box" class="label">Seu telefone</label>
+                    </div>
+                    <div class="buttonEnv"><input type="submit" id="btn" value="Enviar"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>© LemmaTech | 2024</footer>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
