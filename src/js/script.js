@@ -15,6 +15,7 @@ const colorH1 = ['#fff', '#fff', '#131E2F']
 
 const changeBackground = () => {
     const main = document.querySelector('main')
+    const footer = document.querySelector('footer')
     const header = document.querySelector('header')
     const btnColor = document.getElementById('btnColor')
     const btnBanner = document.getElementById('btnBanner')
@@ -35,6 +36,7 @@ const changeBackground = () => {
     })
 
     main.style.background = colorsOne[index]
+    footer.style.background = colorsThree[index]
     header.style.background = colorsThree[index]
     btnColor.style.background = colorsOne[index]
     line1.style.background = colorsTwo[index]

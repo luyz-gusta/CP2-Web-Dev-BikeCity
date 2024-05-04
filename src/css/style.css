@@ -116,7 +116,7 @@ main {
     gap: 64px;
     width: 100vw;
     min-height: 80vh;
-    padding: 24px 32px;
+    padding: 24px 36px;
 }
 
 #btnBanner {
@@ -177,13 +177,15 @@ main {
 .container-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 120px;
+    gap: 24px 5%;
 }
 
 .box-card {
     display: grid;
     grid-template-rows: 50% 50%;
-    width: 340px;
+    flex: 0 1 calc(25% - 5%);
+    box-sizing: border-box;
+    margin-bottom: 20px;
     height: 480px;
 }
 
@@ -221,4 +223,14 @@ main {
 
 .box-info p {
     text-align: justify;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    background-color: var(--three-theme-blue);
+    color: white;
+    font-weight: 500;
 }
