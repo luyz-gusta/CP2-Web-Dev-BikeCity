@@ -9,12 +9,32 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script>
-        window.location.assign('./sobre.html')
-    </script>
+    <header>
+        <h1>BikeCity</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <div class="comeco">
+                <h1 id="txtInicio">Será que você sabe tudo sobre bicicleta?</h1>
+                <p>Bora jogar um quiz e testar seus conhecimentos sobre bicicletas?<br>
+                    Desafie-se agora e descubra o quanto você realmente sabe sobre esse universo das bicicletas!</p>
+            </div>
+            <button id="btnComecar" onclick="comecarQuiz()">Iniciar Quiz</button>
+            <div class="resposta">
+                <h2>Quiz respostas</h2>
+                <p id="resultado"></p>
+            </div>
+        </section>
+    </main>
+    <footer>© LemmaTech | 2024</footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
