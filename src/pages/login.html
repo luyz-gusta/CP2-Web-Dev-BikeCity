@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,40 @@
     <link rel="stylesheet" href="../css/login.css">
 
 </head>
-<body>
 
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body>
+    <header>
+        <h1>BikeCity</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button id="btnColor" onclick="changeBackgroundLogin()">Tema</button>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <div class="container">
+                <form>
+                    <h1>Login</h1>
+                    <p>Preencha o formulário para acessar o quiz</p>
+                    <div class="input-single">
+                        <input type="text" id="user-box" class="input" autocomplete="off" required>
+                        <label for="user-box" class="label">Usuário</label>
+                    </div>
+                    <div class="input-single">
+                        <input type="password" id="password-box" class="input" autocomplete="off" required>
+                        <label for="phone-box" class="label">Password</label>
+                    </div>
+                    <div class="buttonEnv"><button onclick="validar()" id="btn">Enviar</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>© LemmaTech | 2024</footer>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
