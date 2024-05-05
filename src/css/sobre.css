@@ -87,7 +87,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../assets/bike-bg1.png);
+    background: url(../assets/bike-bg.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     width: 100vw;
