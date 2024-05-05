@@ -1,4 +1,162 @@
-header {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --one-theme-cyan: #01a5b1;
+    --three-theme-blue: #131e2f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: unset;
+    color: inherit;
+}
+
+body {
     width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 36px;
     height: 10vh;
+    background-color: var(--three-theme-blue);
+    color: #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#btnColor {
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    border: unset;
+    border: 2px solid #fff;
+}
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu li {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    background-color: var(--three-theme-blue);
+    color: white;
+    font-weight: 500;
+}
+
+main {
+    min-height: 94vh;
+    background-color: #050505;
+    padding-top: 10vh;
+}
+
+section {
+    height: 90vh;
+}
+
+.sec-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/bike-bg1.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100vw;
+}
+
+.content-sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+.content-sec1 h1 {
+    font-size: 8rem;
+}
+
+.content-sec1 p {
+    font-size: 1.25rem;
+    margin-bottom: 80px;
+}
+
+.arrow-down {
+    z-index: 1;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--one-theme-cyan);
+    height: 90vh;
+    padding-top: 1rem;
+    left: 96%;
+}
+
+.fa-chevron-down {
+    font-size: 40px;
+}
+
+.arrow-down span {
+    height: 90%;
+    width: 6px;
+    background-color: var(--one-theme-cyan);
+    border-radius: 10px;
+}
+
+#btnBanner {
+    z-index: 1;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border: 3px solid var(--one-theme-cyan);
+    transition: all 0.7s;
+}
+
+#btnBanner:hover {
+    background-color: var(--one-theme-cyan);
+    box-shadow:
+        0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
 }
